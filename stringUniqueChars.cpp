@@ -1,3 +1,8 @@
+/*
+Program to check if string has all unique chars.
+Method 1: use additional data structs. Time complexity: O(n) Space: O(n)
+Method 2: without using additional data structs. Sort the string in nlogn time and then compare without using any additional data structs.
+*/
 #include <iostream>
 #include <string>
 #define EXCHANGE(a, b) tmp = a; a = b; b = tmp;
