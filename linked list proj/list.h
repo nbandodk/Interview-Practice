@@ -20,6 +20,7 @@ class List{
         void addNode(int add_data);
         void deleteNode(int del_data);
         void printList();
+        void searchList(int search_value);
         
     
 };

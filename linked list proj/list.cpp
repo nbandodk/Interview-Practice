@@ -69,18 +69,44 @@ void List::printList(){
     }
 }
 
+void List::searchList(int search_value)
+{
+    if(head == NULL){
+        cout << "There are no elements in the linked list.\n";
+        exit(0);
+    }
+        
+    
+    nodePtr ptr = new node;
+    ptr = head;
+    
+    while(ptr != NULL){
+        if(ptr->data == search_value){
+            cout << search_value << " is in the linked list.\n";
+            break;
+        }
+        else{
+            ptr = ptr->next;
+        }
+    }
+    if(ptr == NULL)
+        cout << search_value << " was not found in the linked list.\n";
+        
+}
+
 int main(int argc, char** argv){
     
     List Ninad;
     
-    Ninad.addNode(3);
+    /* Ninad.addNode(3);
     Ninad.addNode(5);
     Ninad.addNode(7);
     Ninad.addNode(9);
     
-    Ninad.printList();
+    Ninad.printList(); */
     
-    Ninad.deleteNode(7);
-    Ninad.printList();
+    Ninad.searchList(2);
+    //Ninad.deleteNode(7);
+    //Ninad.printList();
     return 0;
 }
