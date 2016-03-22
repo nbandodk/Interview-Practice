@@ -1,4 +1,4 @@
-?*
+/*
 Program to reverse the words in a string
 Example: Given string: Hi how are you?
         Output: you? are how Hi
