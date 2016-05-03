@@ -1,2 +1,2 @@
-# Interview-Practice
+# Misc programs
 Various coding problems
